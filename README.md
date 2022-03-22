@@ -1,16 +1,17 @@
+# introduction
+
+this project is forked form [replicatedhq/dockerfilelint](https://github.com/replicatedhq/dockerfilelint)
+
 # Linter and validator for Dockerfile
 
-[![Coverage Status](https://coveralls.io/repos/github/replicatedhq/dockerfilelint/badge.svg?branch=master)](https://coveralls.io/github/replicatedhq/dockerfilelint?branch=master)
-[![Build Status](https://travis-ci.org/replicatedhq/dockerfilelint.svg?branch=master)](https://travis-ci.org/replicatedhq/dockerfilelint)
-
-`dockerfilelint` is an node module that analyzes a Dockerfile and looks for common traps, mistakes and helps enforce best practices.
+`newdockerfilelint` is an node module that analyzes a Dockerfile and looks for common traps, mistakes and helps enforce best practices.
 
 ## Installation
 
 Global installation with npm package manager.
 
 ```shell
-npm install -g dockerfilelint
+npm install -g newdockerfilelint
 ```
 
 ## Testing
@@ -21,13 +22,13 @@ Start unit tests with `npm test`, `yarn run test`, or `docker-compose -f docker-
 #### From the command line:
 
 ```shell
-./bin/dockerfilelint <path/to/Dockerfile>
+./bin/newdockerfilelint <path/to/Dockerfile>
 ```
 
 #### Command Line options
 
 ```shell
-Usage: dockerfilelint [files | content..] [options]
+Usage: newdockerfilelint [files | content..] [options]
 
 Options:
   -o, --output   Specify the format to use for output of linting results. Valid values
@@ -37,16 +38,16 @@ Options:
   -h, --help     Show help                                                   [boolean]
 
 Examples:
-  dockerfilelint Dockerfile         Lint a Dockerfile in the current working
+  newdockerfilelint Dockerfile         Lint a Dockerfile in the current working
                                     directory
 
-  dockerfilelint test/example/* -j  Lint all files in the test/example directory and
+  newdockerfilelint test/example/* -j  Lint all files in the test/example directory and
                                     output results in JSON
 
-  dockerfilelint 'FROM latest'      Lint the contents given as a string on the
+  newdockerfilelint 'FROM latest'      Lint the contents given as a string on the
                                     command line
 
-  dockerfilelint < Dockerfile       Lint the contents of Dockerfile via stdin
+  newdockerfilelint < Dockerfile       Lint the contents of Dockerfile via stdin
 ```
 
 #### Configuring
@@ -93,7 +94,7 @@ deprecated_in_1.13
 
 (Replace the ``pwd``/Dockerfile with the path to your local Dockerfile)
 ```shell
-docker run -v `pwd`/Dockerfile:/Dockerfile replicated/dockerfilelint /Dockerfile
+docker run -v `pwd`/Dockerfile:/Dockerfile replicated/newdockerfilelint /Dockerfile
 ```
 
 #### Online

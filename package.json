@@ -1,6 +1,6 @@
 {
-  "name": "dockerfilelint",
-  "version": "1.8.0",
+  "name": "newdockerfilelint",
+  "version": "0.0.3",
   "description": "A linter for Dockerfiles to find bugs and encourage best practices",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -14,19 +14,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/replicatedhq/dockerfilelint.git"
+    "url": "git+https://github.com/zggmd/dockerfilelint.git"
   },
   "keywords": [
     "dockerfile",
     "lint",
     "linter"
   ],
-  "author": "Marc Campbell",
+  "author": "zggmd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/replicatedhq/dockerfilelint/issues"
+    "url": "https://github.com/zggmd/dockerfilelint/issues"
   },
-  "homepage": "https://github.com/replicatedhq/dockerfilelint#readme",
+  "homepage": "https://github.com/zggmd/dockerfilelint#readme",
   "dependencies": {
     "chalk": "^2.4.2",
     "cliui": "^4.1.0",
