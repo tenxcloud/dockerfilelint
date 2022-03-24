@@ -1,6 +1,6 @@
 {
-  "name": "newdockerfilelint",
-  "version": "0.0.3",
+  "name": "@neolink/dockerfilelint",
+  "version": "0.0.4",
   "description": "A linter for Dockerfiles to find bugs and encourage best practices",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -14,19 +14,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zggmd/dockerfilelint.git"
+    "url": "git+https://github.com/tenxcloud/dockerfilelint.git"
   },
   "keywords": [
     "dockerfile",
     "lint",
     "linter"
   ],
-  "author": "zggmd",
+  "author": "tenxcloud",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zggmd/dockerfilelint/issues"
+    "url": "https://github.com/tenxcloud/dockerfilelint/issues"
   },
-  "homepage": "https://github.com/zggmd/dockerfilelint#readme",
+  "homepage": "https://github.com/tenxcloud/dockerfilelint#readme",
   "dependencies": {
     "chalk": "^2.4.2",
     "cliui": "^4.1.0",
@@ -42,5 +42,12 @@
     "mocha": "^6.0.2",
     "nyc": "^13.3.0",
     "standard-version": "^5.0.1"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
