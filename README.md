@@ -1,6 +1,6 @@
 # introduction
 
-this project is forked form [replicatedhq/dockerfilelint](https://github.com/replicatedhq/dockerfilelint)
+this project is forked from [replicatedhq/dockerfilelint](https://github.com/replicatedhq/dockerfilelint)
 
 # Linter and validator for Dockerfile
 
