@@ -4,14 +4,14 @@ this project is forked from [replicatedhq/dockerfilelint](https://github.com/rep
 
 # Linter and validator for Dockerfile
 
-`newdockerfilelint` is an node module that analyzes a Dockerfile and looks for common traps, mistakes and helps enforce best practices.
+`@tenxcloud/dockerfilelint` is an node module that analyzes a Dockerfile and looks for common traps, mistakes and helps enforce best practices.
 
 ## Installation
 
 Global installation with npm package manager.
 
 ```shell
-npm install -g newdockerfilelint
+npm install -g @neolink/dockerfilelint
 ```
 
 ## Testing
@@ -22,13 +22,13 @@ Start unit tests with `npm test`, `yarn run test`, or `docker-compose -f docker-
 #### From the command line:
 
 ```shell
-./bin/newdockerfilelint <path/to/Dockerfile>
+./bin/dockerfilelint <path/to/Dockerfile>
 ```
 
 #### Command Line options
 
 ```shell
-Usage: newdockerfilelint [files | content..] [options]
+Usage: dockerfilelint [files | content..] [options]
 
 Options:
   -o, --output   Specify the format to use for output of linting results. Valid values
@@ -38,16 +38,16 @@ Options:
   -h, --help     Show help                                                   [boolean]
 
 Examples:
-  newdockerfilelint Dockerfile         Lint a Dockerfile in the current working
+  dockerfilelint Dockerfile         Lint a Dockerfile in the current working
                                     directory
 
-  newdockerfilelint test/example/* -j  Lint all files in the test/example directory and
+  dockerfilelint test/example/* -j  Lint all files in the test/example directory and
                                     output results in JSON
 
-  newdockerfilelint 'FROM latest'      Lint the contents given as a string on the
+  dockerfilelint 'FROM latest'      Lint the contents given as a string on the
                                     command line
 
-  newdockerfilelint < Dockerfile       Lint the contents of Dockerfile via stdin
+  dockerfilelint < Dockerfile       Lint the contents of Dockerfile via stdin
 ```
 
 #### Configuring
@@ -94,7 +94,7 @@ deprecated_in_1.13
 
 (Replace the ``pwd``/Dockerfile with the path to your local Dockerfile)
 ```shell
-docker run -v `pwd`/Dockerfile:/Dockerfile replicated/newdockerfilelint /Dockerfile
+docker run -v `pwd`/Dockerfile:/Dockerfile replicated/dockerfilelint /Dockerfile
 ```
 
 #### Online
@@ -143,7 +143,7 @@ If you don't want to install this locally you can try it out on  [https://fromla
 - [x] Only the container port should be listed
 - [ ] All ports should be exposed in a single cache layer (line)
 - [ ] The same port number should not be exposed multiple times
-- [x] Exposed ports should be numeric and in the accepted range
+- [x] Exposed ports should be numeric and in the accepted range, or variable starting with $
 
 ### `ENV`
 
